@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La mia to do list</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>La mia to do list</h1>
+      <p>Organizza le attività e tieni traccia dei tuoi progressi.</p>
+    </header>
+
+    <section class="task-entry" aria-labelledby="entry-heading">
+      <h2 id="entry-heading">Aggiungi una task</h2>
+      <form id="task-form">
+        <label for="task-input">Nuova attività</label>
+        <div class="task-input-row">
+          <input
+            id="task-input"
+            name="task"
+            type="text"
+            placeholder="Scrivi un'attività e premi Invio"
+            autocomplete="off"
+            required
+          >
+          <button type="submit">Aggiungi</button>
+        </div>
+      </form>
+    </section>
+
+    <div class="task-lists">
+      <section class="task-section" aria-labelledby="todo-heading">
+        <h2 id="todo-heading">Da fare</h2>
+        <ul id="todo-list" aria-labelledby="todo-heading">
+          <!-- Le attività da completare verranno inserite qui. -->
+        </ul>
+      </section>
+
+      <section class="task-section" aria-labelledby="done-heading">
+        <h2 id="done-heading">Fatto</h2>
+        <ul id="done-list" aria-labelledby="done-heading">
+          <!-- Le attività completate verranno inserite qui. -->
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
